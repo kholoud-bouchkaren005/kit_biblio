@@ -86,14 +86,14 @@ class Bibliotheque
         }
 
         $disponibles = 0;
-        foreach ($this->livres as$livre) {
-            if (method_exists($livre, 'estDisponible')) {
-                if ($livre->estDisponible()) {$disponibles++;
-                }
-            } else {
-                $disponibles++;
-            }
+        foreach ($this->livres as $livre) {
+    if (method_exists($livre, 'estDisponible')) {
+        // RÉGRESSION INTRODUITE : Inversion du test de disponibilité
+        if (!$livre->estDisponible()) { 
+            $disponibles++;
         }
+    }
+}
 
         $taux = round(($disponibles / $total) * 100, 2);
 
