@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Classe Bibliotheque : gere une collection de livres.
+ *  kholoud Classe Bibliotheque : gere une collection de livres.
  *
  * Tableau prive de Livre. Methodes : ajouter, trouver, tous, compter, rechercher.
  */

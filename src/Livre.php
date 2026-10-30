@@ -1,7 +1,7 @@
 <?php
 
-/**
- * Classe Livre : represente un livre de la bibliotheque.
+/** 
+ *  kholoud Classe Livre : represente un livre de la bibliotheque.
  *
  * Proprietes privees : isbn, titre, auteur, disponible.
  * Le constructeur leve InvalidArgumentException si l'ISBN n'a pas 10 ou 13 chiffres.
